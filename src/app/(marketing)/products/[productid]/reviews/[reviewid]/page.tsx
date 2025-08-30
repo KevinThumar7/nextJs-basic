@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 async function Review({
   params,
@@ -11,7 +11,8 @@ async function Review({
   const idPr = (await params).productid;
 
   if (parseInt(idRe || idPr) > 1000) {
-    notFound();
+    // notFound();
+    redirect("/");
   }
 
   return (

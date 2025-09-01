@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname();
 
-  const isActive = pathname == "/about" && pathname != "/";
+  const isActive = pathname == "/about";
   const isActive1 =
     pathname == "/products" ||
     (pathname.startsWith("/products") && pathname != "/");
@@ -62,6 +62,8 @@ export default function RootLayout({
           <Link href={"/profile"}>Profile</Link>
           <br />
           <Link href={"/orders"}>Orders Page</Link>
+          <br />
+          <Link href={"/dashboard"}>Dashboard</Link>
         </header>
         {children}
         <footer className="bg-green-400 py-5">Footer</footer>

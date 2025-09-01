@@ -10,6 +10,16 @@ export const metadata = {
   },
 };
 
+export const getRanNum = (count: number) => {
+  return Math.floor(Math.random() * count);
+};
+
 export default function CounterPage() {
+  const random = getRanNum(5);
+
+  if (random < 2) {
+    throw new Error("Error loading counter game");
+  }
+
   return <Counter />;
 }

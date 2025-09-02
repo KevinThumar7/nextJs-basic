@@ -41,7 +41,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-amber-400 py-5">
+        <header className="bg-amber-400 py-5 flex gap-4">
           <Link href={"/"}>Home</Link>
           <br />
           <Link className={isActive ? "text-green-500" : ""} href={"/about"}>
@@ -64,6 +64,8 @@ export default function RootLayout({
           <Link href={"/orders"}>Orders Page</Link>
           <br />
           <Link href={"/dashboard"}>Dashboard</Link>
+          <br />
+          <Link href={"/auth"}>Auth</Link>
         </header>
         {children}
         <footer className="bg-green-400 py-5">Footer</footer>

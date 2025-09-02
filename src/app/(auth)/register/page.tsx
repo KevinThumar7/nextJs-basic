@@ -4,7 +4,10 @@ export const metadata = {
   title: "Register Page"
 }
 
-function Register() {
+async function Register() {
+
+  await new Promise((resolve)=>setTimeout(resolve,4000))
+
   return (
     <div>Register</div>
   )

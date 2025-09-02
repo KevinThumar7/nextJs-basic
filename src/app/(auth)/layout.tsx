@@ -6,7 +6,7 @@ export default function AuthLayout({
   return (
     <html lang="en">
       <body>
-        <h1>Auth Layout</h1>
+        {/* <h1>Auth Layout</h1> */}
         {children}
       </body>
     </html>

@@ -4,7 +4,10 @@ export const metadata = {
   title: "Login Page"
 }
 
-function Login() {
+async function Login() {
+
+  await new Promise((resolve)=>setTimeout(resolve,4000))
+
   return (
     <div>Login</div>
   )

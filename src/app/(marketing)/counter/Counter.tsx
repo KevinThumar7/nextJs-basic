@@ -10,7 +10,7 @@ function Counter() {
   return (
     <div>
         <h1>Counter Game</h1>
-        <input type="number" readOnly value={increase} />
+        <input title="number" type="number" readOnly value={increase} />
         <br />
         <button onClick={()=>setIncrease(increase+1)}>Increase Value</button>
     </div>
